@@ -1,35 +1,31 @@
-// 1. English Section:
-$(".english-button").click(function(){
-    let englishInput = $(".english").val();
-        
+// set the correct username and password combination below
+let correctUsername = "hotarakit@att.net";
+let correctPassword = "attgsm";
+
+
+
+$("button").click(function() {
+    let username = $(".username").val();
+    let password = $(".password").val();
     
-    $(".english-message").text("Correct!");
     
-    // display this text if the answer is incorrect
-    $(".english-message").text("Wrong! Try again."); 
+    // WRITE YOUR COMPOUND CONDITIONAL BELOW THIS LINE
+    if (username === correctUsername && password === correctPassword) {
+       $(".message").text("Correct, Redirecting you to att.com"); 
+       var url = "https://www.att.com";
+$(location).attr('href',url);
+    console.log(username);
+    console.log(password);}
     
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
 });
-
-
-// 2. Social Studies section
-$(".ss-button").click(function(){
-    let ssInput = $(".social-studies").val();
-
-    
-});
-
-
-// 3. Math section
-$(".math-button").click(function(){
-    let mathInput = Number($(".math").val());
-    
-
-
-
-});
-
-
-// 4. Science section
-
-
-
